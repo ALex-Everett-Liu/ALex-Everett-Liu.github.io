@@ -2,6 +2,7 @@
 layout: post
 title: "better-graph-view"
 date: 2024-09-28
+author: Everett Liu
 ---
 
 basic GUI through tkinter:
