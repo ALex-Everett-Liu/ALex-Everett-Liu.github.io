@@ -1,0 +1,16 @@
+---
+layout: default
+title: Everett Liu's Blog
+---
+
+<h1>{{ page.title }}</h1>
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+      <p>{{ post.date | date_to_string }}</p>
+      {{ post.excerpt }}
+    </li>
+  {% endfor %}
+</ul>
