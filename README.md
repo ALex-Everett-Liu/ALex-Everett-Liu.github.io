@@ -1,2 +1,2 @@
 # ALex-Everett-Liu.github.io
-my blog
+my graph world
