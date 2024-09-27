@@ -7,7 +7,7 @@ layouts_dir         : _layouts
 data_dir            : _data
 includes_dir        : _includes
 sass:
-  sass_dir: _sass
+  sass_dir: assets/css
 collections:
   posts:
     output          : true
@@ -33,6 +33,7 @@ plugins             : []
 
 # Conversion
 markdown            : kramdown
+theme               : minima
 highlighter         : rouge
 lsi                 : false
 excerpt_separator   : "\n\n"
@@ -43,6 +44,9 @@ detach              : false
 port                : 4000
 host                : 127.0.0.1
 baseurl             : "" # does not include hostname
+url                 : "https://github.com/ALex-Everett-Liu/ALex-Everett-Liu.github.io"
+title               : Everett Liu
+description         : graph world
 show_dir_listing    : false
 
 # Outputting
@@ -58,6 +62,7 @@ liquid:
   error_mode        : warn
   strict_filters    : false
   strict_variables  : false
+
 
 # Markdown Processors
 kramdown:
