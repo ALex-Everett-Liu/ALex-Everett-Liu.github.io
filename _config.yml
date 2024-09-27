@@ -34,7 +34,7 @@ exclude:
   - vendor/ruby/
 
 # Permalink style
-permalink: date
+permalink: /:title.html
 
 # Pagination
 paginate_path: /page:num
