@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "better-graph-view"
-date: 2024-09-28
+date: 2024-09-27
 author: Everett Liu
 ---
 
