@@ -14,7 +14,8 @@ Tip: Scrollbars Plugin 无法为 Roam Portal / All Pages 创建滚动条，而�
 ::-webkit-scrollbar {
     width: 15px;
     background-color: rgba(196, 181, 253, 0.3); /* rgba(15,118,110,0.2), rgba(234,64,126,0.2) */
-}```
+}
+```
 
 ## Roam Color Highlighter
 
