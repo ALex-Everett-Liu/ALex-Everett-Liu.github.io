@@ -175,6 +175,7 @@ my self-defined data-tags:
   border-bottom: 3px solid #FFC8A7;
 }
 ```
+
 ## Roam Studio
 
 my customization:
@@ -210,7 +211,8 @@ my customization:
     --co-right-sidebar__h1: var(--cl-fuchsia-700); /* var(--cl-fuchsia-200) */
 	--fs-right-sidebar__h1: 1.3rem;
 	--fw-right-sidebar__h1: 700;
-}```
+}
+```
 
 ## font
 
@@ -220,4 +222,5 @@ my customization:
 * {
   /* Screen version */
   font-family: "Inter", "LXGW WenKai Screen", sans-serif;
-}```
+}
+```
