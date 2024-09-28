@@ -46,17 +46,35 @@ author: Everett Liu
 <body>
     <h1>GitHub Pages Setup Issues</h1>
 
-    <ol>
-        <li>time issue</li>
-        <li>encoding issue</li>
-    </ol>
+    <h2>1. Time Issue</h2>
+    <p>When setting up GitHub Pages, you might encounter time-related issues. These can manifest in various ways, such as:</p>
+    <ul>
+        <li>Incorrect post dates being displayed</li>
+        <li>Build times not aligning with your local time</li>
+        <li>Scheduled posts not publishing at the expected time</li>
+    </ul>
+    <p>To resolve time issues, ensure your repository's settings and your local environment are configured with the correct time zone.</p>
+    <p>终于发现问题在于删掉了 `_config.yml` 中的 future 字段，日期那一栏填的 2024-09-28 就解析不出来了，因为当前的 UTC 时间 TM 的还是 2024-09-27！（咱们东八区比 UTC 快八个小时……）</p>
+
+    <h2>2. Encoding Issue</h2>
+    <p>Encoding issues are another common problem when setting up GitHub Pages. These issues can cause:</p>
+    <ul>
+        <li>Special characters appearing as gibberish</li>
+        <li>Inconsistent rendering of content across different browsers</li>
+        <li>Build failures due to unrecognized characters</li>
+    </ul>
+    <p>To address encoding issues, make sure all your files are saved with UTF-8 encoding and include the appropriate meta tags in your HTML files.</p>
 
     <div class="qa-section">
         <div class="question">
             Q (me): I finally find what's wrong:
+
             When I edit index.html directly in Github repo this time, it shows that:
+
             "We've detected the file encoding as UTF-16LE. When you commit changes we will transcode it to UTF-8."
+
             So I just delete this index.html and re-create a new index.html with the same content, this time all things works well.
+            
             but, I just wonder why this happened? 
         </div>
         <div class="answer">
